@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello world</h1>
+    <h1>laasya</h1>
+    <p class="myclass1">good morning</p>
+    <p class = "myclass2">good evening</p>
+    <p class ="myclass2">good afternoon</p>
+    <p id="myid1">hi</p>
+    <script>
+        setTimeout(function(){
+        document.body.getElementsByTagName("h1")[0].innerHTML="Hello"},5000
+
+    )
+        setTimeout(function(){
+        document.body.getElementsByClassName("myclass2")[0].innerHTML="goodnight"},10000
+
+    )   
+
+        document.querySelectorAll("p").innerHTML= "hello everyone"
+
+    </script>
+</body>
+</html>

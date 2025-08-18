@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="button" onclick="Counter()" value="Counter">
+    <p> Start... </p>
+    
+    <script>
+    function Counter() {
+        for (let i = 1; i < 100; i++) {
+            setTimeout(function() {
+                document.getElementsByTagName("p")[0].innerHTML = "Counter " + i;
+            }, 1000 * i); // delay increases with i
+        }
+    }
+</script>
+
+
+</body>
+</html>
