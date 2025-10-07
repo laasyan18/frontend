@@ -1,0 +1,12 @@
+{
+  "name": "react-workspace",
+  "version": "1.0.0",
+  "description": "React workspace containing multiple projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["react"],
+  "author": "",
+  "license": "ISC"
+}

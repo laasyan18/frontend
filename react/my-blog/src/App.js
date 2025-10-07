@@ -1,22 +1,20 @@
-import Navbar from "./Navbar";
-import Home from "./Home";
-const App = () => {
+import Navbar from './Navbar.js';
+import Home from './Home.js';
+import { Route, Switch } from "react-router-dom";
+import Create from './Create.js';
+import BlogDetails from './BlogDetails.js';
 
-  const myStr="this is my string";
-  const a=2.5;
-  const mylink = "https://www.google.com/"
-
-  return ( 
-
-    <div className="App">
-      <Navbar/>
-      <Home/>
-
-
-    </div>
-
-   );
+function App() {
+  return (
+      <div className="App">
+        <Navbar />
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route path="/create" component={Create} />
+          <Route path="/blogs/:id" component={BlogDetails} />
+        </Switch>
+      </div>
+  );
 }
- 
-export default App;
 
+export default App;
